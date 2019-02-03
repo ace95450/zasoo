@@ -1,0 +1,8 @@
+<div class="panel panel-info">
+  <div class="panel-heading">List of Images</div>
+  <div *ngFor="let file of fileUploads">
+    <div class="panel-body">
+      <details-upload [fileUpload]='file' cdkDroptList class="exemple-list" (cdkDropListDropped)="drop($event)"></details-upload>
+    </div>
+  </div>
+</div>
